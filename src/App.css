@@ -1,0 +1,16 @@
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 24px;
+  width: 100%;
+}
+
+.page-container h1 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.page-container p {
+  font-size: 18px;
+  color: #6b7280;
+}

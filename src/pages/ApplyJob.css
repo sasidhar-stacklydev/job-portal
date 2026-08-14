@@ -1,0 +1,143 @@
+.apply-page {
+  max-width: 850px;
+  margin: auto;
+  padding: 30px 0;
+}
+
+.apply-header {
+  margin-bottom: 30px;
+}
+
+.apply-header h1 {
+  font-size: 38px;
+  margin: 20px 0 10px;
+}
+
+.apply-header p {
+  color: #6b7280;
+}
+
+.application-form {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 35px;
+}
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  padding: 13px;
+  font-size: 15px;
+  outline: none;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #2563eb;
+}
+
+.form-error {
+  display: block;
+  color: #dc2626;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.submit-button {
+  width: 100%;
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 14px;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background: #1d4ed8;
+}
+
+.success-container {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.success-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 15px;
+  padding: 50px;
+  text-align: center;
+  max-width: 550px;
+}
+
+.success-icon {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 20px;
+  background: #dcfce7;
+  color: #15803d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.success-card h1 {
+  margin-bottom: 15px;
+}
+
+.success-card p {
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.success-card button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 13px 25px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .apply-page {
+    padding: 20px 10px;
+  }
+
+  .application-form {
+    padding: 22px;
+  }
+
+  .apply-header h1 {
+    font-size: 30px;
+  }
+
+  .success-card {
+    padding: 30px 20px;
+  }
+}

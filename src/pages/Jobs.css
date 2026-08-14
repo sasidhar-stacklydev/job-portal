@@ -1,0 +1,275 @@
+.category-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.category-list a {
+  text-decoration: none;
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 20px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.simple-job {
+  background: white;
+  border: 1px solid #e5e7eb;
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+.simple-job h3 {
+  margin-bottom: 8px;
+}
+
+.simple-job p {
+  color: #6b7280;
+}
+
+.job-details {
+  max-width: 900px;
+  margin: auto;
+}
+
+.back-button {
+  border: none;
+  background: transparent;
+  color: #2563eb;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.job-details-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 35px;
+}
+
+.job-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-details-header h1 {
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.job-details-header p {
+  color: #6b7280;
+}
+
+.job-details-header span {
+  background: #dcfce7;
+  color: #15803d;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.job-info {
+  display: flex;
+  gap: 30px;
+  margin: 25px 0;
+}
+
+.job-info p {
+  color: #4b5563;
+}
+
+.job-details-card hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin-bottom: 30px;
+}
+
+.job-details-card h2 {
+  margin-top: 25px;
+  margin-bottom: 12px;
+}
+
+.description {
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+.skills {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 20px 0 30px;
+}
+
+.skills span {
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.apply-button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 13px 30px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.apply-button:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 700px) {
+  .category-list {
+    grid-template-columns: 1fr;
+  }
+
+  .job-details-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .job-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .job-details-card {
+    padding: 20px;
+  }
+}
+.api-jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.api-job-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 25px;
+  transition: 0.3s;
+}
+
+.api-job-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.api-job-icon {
+  width: 50px;
+  height: 50px;
+  background: #eff6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.api-job-card h3 {
+  margin-bottom: 10px;
+}
+
+.api-job-card p {
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.api-job-price {
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 15px;
+}
+
+.api-job-card a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.loading {
+  text-align: center;
+  padding: 50px;
+}
+
+.spinner {
+  width: 35px;
+  height: 35px;
+  border: 4px solid #dbeafe;
+  border-top-color: #2563eb;
+  border-radius: 50%;
+  margin: auto auto 15px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.error-message {
+  background: #fee2e2;
+  color: #991b1b;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.no-results {
+  background: white;
+  border: 1px solid #e5e7eb;
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 700px) {
+  .api-jobs-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.job-card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.save-button {
+  border: 1px solid #d1d5db;
+  background: white;
+  color: #374151;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.save-button:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.save-button.saved {
+  background: #eff6ff;
+  color: #2563eb;
+  border-color: #2563eb;
+}
